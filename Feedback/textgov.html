@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style  media="all">
+        @import url("//www.mygov.in/modules/system/system.base.css?rhxjl0");
+        @import url("//www.mygov.in/modules/system/system.menus.css?rhxjl0");
+        @import url("//www.mygov.in/modules/system/system.messages.css?rhxjl0");
+        @import url("//www.mygov.in/modules/system/system.theme.css?rhxjl0");
+        </style>
+        <style  media="all">
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-jquery-ui-theme.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?rhxjl0");
+        </style>
+        <style  media="all">
+        @import url("//www.mygov.in/sites/all/modules/custom/activities_logs/activities_logs.css?rhxjl0");
+        @import url("//www.mygov.in/modules/comment/comment.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/date/date_api/date.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/date/date_popup/themes/datepicker.1.7.css?rhxjl0");
+        @import url("//www.mygov.in/modules/field/theme/field.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/field_hidden/field_hidden.css?rhxjl0");
+        @import url("//www.mygov.in/modules/node/node.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_admin/panopoly-admin.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-fonts.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-dropbutton.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_magic/css/panopoly-magic.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_magic/css/panopoly-modal.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_theme/css/panopoly-featured.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_theme/css/panopoly-accordian.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_widgets/panopoly-widgets.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/panopoly/panopoly_wysiwyg/panopoly-wysiwyg.css?rhxjl0");
+        @import url("//www.mygov.in/modules/poll/poll.css?rhxjl0");
+        @import url("//www.mygov.in/modules/user/user.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/views/css/views.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/back_to_top/css/back_to_top.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/caption_filter/caption-filter.css?rhxjl0");
+        </style>
+        <style  media="all">
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/ctools/css/ctools.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/ldap/ldap_servers/ldap_servers.admin.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/lightbox2/css/lightbox_alt.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/likedislike/templates/likedislike.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/messageclose/css/messageclose.css?rhxjl0");
+        @import url("//www.mygov.in/profiles/panopoly/modules/contrib/panels/css/panels.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/custom/common_utils/css/dark.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/custom/web_push_notification/css/push.css?rhxjl0");
+        @import url("//www.mygov.in/modules/locale/locale.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/text_resize/text_resize.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/modules/contrib/webform/css/webform.css?rhxjl0");
+        </style>
+        <style  media="all">
+        @import url("//www.mygov.in/sites/all/themes/mygov/css/style.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/themes/mygov/css/front_style.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/themes/mygov/css/style_responsive.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/themes/mygov/css/skeleton.css?rhxjl0");
+        @import url("//www.mygov.in/sites/all/themes/mygov/css/jquery.mCustomScrollbar.min.css?rhxjl0");
+        </style>
+</head>
+<body>
+    <div class="region region-content">
+        <div id="block-block-33" class="block block-block">
+    
+        
+      <div class="content">
+        <div class="feedback_page_block">
+    <p>Thank You for visiting MyGov and becoming a stakeholder in the governance procedure of the country. We would like to hear from you about your experience and get your valued feedback on how we can make your participation in the governance process better.</p>
+    <p>In case you are facing any problem regarding the registration or login process, please do get in touch with us through this form. We would be more than happy to get back to you and help in solving issues you may be faced while browsing and/or participating through MyGov, as we value your participation in MyGov.</p>
+    <p>Did not find your suggestions on the platform? Do not hesitate to get in touch with us with the same we will address your issue at the earliest as we value your participation in the MyGov Platform.</p>
+    <div><span>For details you can visit the <a href="/mygov-faq/" target="_blank">FAQ</a> page.</span></div>
+    </div>
+      </div>
+    </div>
+    <div id="block-system-main" class="block block-system">
+    
+        
+      <div class="content">
+        <div id="node-670" class="node node-webform node-promoted clearfix">
+    
+          
+      
+      
+      <div class="content clearfix">
+        <form class="webform-client-form webform-client-form-670" autocomplete="off" action="/feedback/" method="post" id="webform-client-form-670" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-textfield webform-component--name">
+      <label for="edit-submitted-name">Name </label>
+     <input placeholder="Enter Your Name" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="50" maxlength="125" class="form-text" />
+    </div>
+    <div  class="form-item webform-component webform-component-textfield webform-component--mobile-no">
+      <label for="edit-submitted-mobile-no">Mobile No. </label>
+     <input placeholder="Enter Your Mobile Number with country code ..." type="text" id="edit-submitted-mobile-no" name="submitted[mobile_no]" value="" size="50" maxlength="15" class="form-text" />
+    </div>
+    <div  class="form-item webform-component webform-component-textfield webform-component--email">
+      <label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span></label>
+     <input required="required" placeholder="Enter Your Email" type="text" id="edit-submitted-email" name="submitted[email]" value="" size="50" maxlength="225" class="form-text required" />
+    </div>
+    <div  class="form-item webform-component webform-component-select webform-component--category">
+      <label for="edit-submitted-category">Category <span class="form-required" title="This field is required.">*</span></label>
+     <select required="required" id="edit-submitted-category" name="submitted[category]" class="form-select required"><option value="" selected="selected">- Select -</option><option value="1">Signup/Login</option><option value="2">Task</option><option value="3">Discussion</option><option value="4">MyGov Content</option><option value="5">Others</option></select>
+    </div>
+    <div  class="form-item webform-component webform-component-textarea webform-component--comments">
+      <label for="edit-submitted-comments">Comments <span class="form-required" title="This field is required.">*</span></label>
+     <div class="form-textarea-wrapper resizable"><textarea required="required" placeholder="Maximum 500 Characters" id="edit-submitted-comments" name="submitted[comments]" cols="5" rows="5" class="form-textarea required"></textarea></div>
+    </div>
+    <input type="hidden" name="details[sid]" />
+    <input type="hidden" name="details[page_num]" value="1" />
+    <input type="hidden" name="details[page_count]" value="1" />
+    <input type="hidden" name="details[finished]" value="0" />
+    <input type="hidden" name="form_build_id" value="form-yPupK6s4UBg71btV-BGhcZJu4gwcHXfVzjr6Iy9HtZs" />
+    <input type="hidden" name="form_id" value="webform_client_form_670" />
+    <fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="4363711" />
+    <input type="hidden" name="captcha_token" value="f5687a2d81a94b032e791ab62d5f7d7b" />
+    <img src="/image_captcha/?sid=4363711&amp;ts=1662705725" width="216" height="60" alt="Image CAPTCHA" title="Image CAPTCHA" /><div class="form-item form-type-textfield form-item-captcha-response">
+      <label for="edit-captcha-response">What code is in the image? <span class="form-required" title="This field is required.">*</span></label>
+     <input type="text" id="edit-captcha-response" name="captcha_response" value="" size="15" maxlength="128" class="form-text required" />
+    <div class="description">Enter the characters shown in the image.</div>
+    </div>
+    <div class="reload-captcha-wrapper"><a href="/captcha/refresh/webform_client_form_670/" class="reload-captcha">Generate a new captcha</a></div></div></fieldset>
+    <div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Submit" /></div></div></form>
+    </div>
+    
+          
+      
+</body>
+</html>

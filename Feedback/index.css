@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(209, 210, 203);    
+}
+#header{
+    font-size:60px;
+    background-color: purple;
+    text-align: center;
+    border-radius: 350px;
+}
+#footer{
+    font-size:10px;
+    text-align: right;
+}
+
+#survey-form-suggestions{
+    height: 50px;
+    width: 550px;
+}
+
+/* #submit{
+    border-radius: 50px;
+    height: 31px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
