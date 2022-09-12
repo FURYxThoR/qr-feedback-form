@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | QR Feedback</title>
+    <style>
+    body {
+    font: 13px/20px "Open Sans", Tahoma, Verdana, sans-serif;
+    color: #a7a599;
+    background-image: url(flowerforbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    }
+
+    .login {
+    position: relative;
+    margin: 100px auto;
+    width: 370px;
+    height: 315px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    text-align: center;
+    }
+
+    .login h1 {
+    line-height: 55px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    margin-top: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-radius: 0px;
+    }
+
+    .form {
+  width: 100%;
+}
+.form .field {
+  position: relative;
+  margin: 0 50px;
+  color:#ffffff;
+  text-align: left;
+}
+::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "Open Sans";
+}
+
+.form input[type=text], input[type=password] {
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 10px;
+  position: relative;
+  width: 200px;
+  height: 24px;
+    border-radius: 15px;
+  border: none;
+  background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  transition: color 0.3s ease-out;
+  text-align: left;
+}
+
+.form input[type=text] {
+  margin-bottom: 15px;
+}
+/*continued styling for input */
+.form input[type=checkbox] {
+  display: none;
+}
+
+.form input[type=submit] {
+  margin-top: 25px;
+  width: 270px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: auto;
+    bottom:0;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="login">
+    <h1>Admin-Login </h1>
+
+    <form class="form" method="post" action="#">
+
+        <p class="field">
+        Username : 
+          <input type="text" name="login" placeholder="Username" required/>
+          <i class="fa fa-user"></i>
+        </p>
+  
+        <p class="field">
+        Enter Your Password : 
+          <input type="password" name="password" placeholder="Password" required/>
+          <i class="fa fa-lock"></i>
+        </p>
+        <br>
+        <p class="submit"><input type="submit" name="sent" value="Login"></p>
+      </form>
+    </div>
+    
+  
+</body>
+</html>
