@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(209, 210, 203);    
+    background-color: slategrey;    
 }
 #header{
     font-size:60px;
@@ -19,14 +19,6 @@ body{
     height: 50px;
     width: 550px;
 }
-
-/* #submit{
-    border-radius: 50px;
-    height: 31px;
-} */
-
-
-
 
 
 
