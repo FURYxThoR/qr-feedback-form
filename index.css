@@ -3,9 +3,12 @@ body{
 }
 #header{
     font-size:60px;
-    background-color: purple;
+    background-color: #004aad;
     text-align: center;
     border-radius: 350px;
+    position: fixed;
+    top:0;
+    width:100%;
 }
 #footer{
     font-size:10px;
