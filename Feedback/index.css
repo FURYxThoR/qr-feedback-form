@@ -1,12 +1,35 @@
-body{
-    background-color: rgb(209, 210, 203);    
+body {
+    padding-top: 75px;
+    background: slategray;
+    color: white;
+   
+    
 }
+
+#description{
+    text-align: center;
+    backdrop-filter: blur(10px)
+}
+
 #header{
     font-size:60px;
-    background-color: purple;
+    background-color: rgb(0, 32, 128);
+    backdrop-filter: blur(10px);
     text-align: center;
-    border-radius: 350px;
+    color: white;
+    display: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    opacity: 0.77;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    
+    
+
 }
+
 #footer{
     font-size:10px;
     text-align: right;
@@ -17,10 +40,7 @@ body{
     width: 550px;
 }
 
-/* #submit{
-    border-radius: 50px;
-    height: 31px;
-} */
+
 
 
 
