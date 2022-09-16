@@ -4,7 +4,7 @@ body{
     /* background-color: slategrey;     */
     background-image: url(stripes.jpg);
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
 }
@@ -19,8 +19,7 @@ body{
     width:100%;
 }
 #footer{
-    position: fixed;
-    bottom: 0;
+    position: relative;
     font-size:10px;
     align-items: right;
 }
