@@ -2,10 +2,8 @@ body{
     color: white;
     padding-top: 30px;
     /* background-color: slategrey;     */
-    background-image: url(stripes.jpg);
-    background-position: center;
-    background-size: 100% 150%;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-size: cover;
     backdrop-filter: blur(10px);
 }
 #header{
