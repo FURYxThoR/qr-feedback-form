@@ -150,8 +150,7 @@
     </style>
     <script type="text/javascript">
       function myFunction() {
-        var form = document.getElementById("form");
-        form.action = location.href.replace(/^http:/, 'https:');
+      location.replace("form.html")
       };
   </script>
 </head>
@@ -159,7 +158,7 @@
     <div class="login">
     <h1>Login - form</h1>
 
-    <form id="form" method="POST" action="https://furyxthor.github.io/qr-feedback-form/">
+    <form class="form" method="POST" action="#">
 
         <p class="field">
         Mobile Number : 
