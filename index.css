@@ -1,30 +1,40 @@
 body{
+    display:justify-content;
     color: white;
-    padding-top: 30px;
-    /* background-color: slategrey;     */
+    background-color: slategrey;    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-size: cover;
-    backdrop-filter: blur(10px);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    
 }
 #header{
     color: #f0f0f0;
     font-size:30px;
-    background-color: #14065a;
+    background-color: rgba(0, 0, 0, 0.215);
+    backdrop-filter: blur(10px);
     text-align: center;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    position: sticky;
+    height: auto;
+    width: 100%;
+    border: 3px solid #192448;
+    border-radius: 20px;
+    margin: 0;
 }
 #footer{
-    position: relative;
+   
     font-size:10px;
     align-items: right;
 }
 
 #survey-form-suggestions{
-    height: 50px;
-    width: 550px;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    background-color: #192448;
+    padding-bottom:0px;
 }
 
 /* Media Queries: Tablet Landscape */
@@ -39,7 +49,36 @@ body{
     #secondary { width:100%; margin:0; border:none; }
 }
 
-#survey-form{
+
+#description{
+    font-size: 10px;    
+}
+
+.labels{
+    padding-bottom: 10px;
+}
+
+#submit{
+    margin-bottom: 28vw;
+    border: 2px solid #192448;
+    border-radius:20px;
+    background-color: rgba(167, 167, 167, 0.215);
+    padding:8px 20px 8px 20px;
+    color: #ffffff;
     backdrop-filter: blur(10px);
 }
 
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 0%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.footer-bottom p{
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
