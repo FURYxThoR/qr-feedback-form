@@ -54,7 +54,13 @@
   .form {
   width: 100%;
 }
-.form .field {
+.form .mobile {
+  position: relative;
+  margin: 0 50px;
+  color:#ffffff;
+  text-align: left;
+}
+.form .otp {
   position: relative;
   margin: 0 50px;
   color:#ffffff;
@@ -104,7 +110,7 @@
   font-weight: bold;
   /* padding: 12px; */
   width: 100%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255,255,255,0.2);
     border-left: 1px solid rgba(255,255,255,0.2);
@@ -134,7 +140,7 @@
     border: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    position: auto;
+    position: fixed;
     bottom:0;
 }
 
@@ -163,19 +169,18 @@
 
     <form class="form" method="post" action="form.html">
 
-        <p class="field">
+        <p class="mobile">
         Mobile Number : 
-          <input type="number" name="login" placeholder="Enter your mobile number" required/>
-          <i class="fa fa-user"></i>
+          <input type="number" name="mobile" placeholder="Enter your mobile number" maxlength="10" required/>
         </p>
   
-        <p class="field">
+        <p class="otp">
          OTP : 
-          <input type="password" name="otp" placeholder="Enter OTP sent to your phone"  required/>
-          <i class="fa fa-lock"></i>
+          <input type="password" name="otp" placeholder="Enter OTP" maxlength="4" required/>
         </p>
-        <input type="submit" id="otp" name="sendotp" value="Send OTP"></p>
-        <p class="submit"><input type="submit" name="sent" value="Login" onclick="myFunction()"></p>
+        <input type="button" id="otp" name="otp" value="Send OTP"></p>
+        <p class="submit">
+        <input type="submit" name="sent" value="Login" onclick="myFunction()"></p>
       </form>
     </div>
     
