@@ -12,13 +12,12 @@
     background-color: slategrey;    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: repeat;
     }
 
     .login {
-    position: relative;
-    margin: 100px auto;
+    position: fixed;
+    margin: auto;
     width: 370px;
     height: 315px;
     background: rgba(255,255,255,0.05);
@@ -28,6 +27,9 @@
     box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
     border-radius: 15px;
     text-align: center;
+    left: auto;
+    transform: translate(0%, 50%);
+    
     }
 
     .login h1 {
@@ -176,17 +178,7 @@
         <p class="submit"><input type="submit" name="sent" value="Login" onclick="myFunction()"></p>
       </form>
     </div>
-    <script src="firebase.js"></script>
-    <script>
-      const firebaseConfig = {
-      apiKey: "AIzaSyC62kR5nxhbtVR4nikc7gMhFawU5hvJIDs",
-      authDomain: "qr-feedback-form.firebaseapp.com",
-      projectId: "qr-feedback-form",
-      storageBucket: "qr-feedback-form.appspot.com",
-      messagingSenderId: "570897041700",
-      appId: "1:570897041700:web:bff1b6b7b7353d3c274bb1"
-      };
-    </script>
+    
     
   
 </body>

@@ -1,5 +1,5 @@
 body{
-    display:justify-content;
+    justify-content: center;
     color: white;
     background-color: slategrey;    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
