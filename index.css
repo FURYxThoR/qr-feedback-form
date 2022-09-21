@@ -1,7 +1,7 @@
 body{
     justify-content: center;
     color: white;
-    background-color: slategrey;    
+    /* background-color: slategrey;     */
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-size: cover;
     -webkit-background-size: cover;
@@ -35,6 +35,9 @@ body{
     display: flex;
     background-color: #192448;
     padding-bottom:0px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 /* Media Queries: Tablet Landscape */
@@ -59,6 +62,15 @@ body{
 }
 
 #submit{
+    margin-bottom: 28vw;
+    border: 2px solid #192448;
+    border-radius:20px;
+    background-color: rgba(167, 167, 167, 0.215);
+    padding:8px 20px 8px 20px;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+}
+.btn{
     margin-bottom: 28vw;
     border: 2px solid #192448;
     border-radius:20px;
