@@ -58,11 +58,12 @@
   color:#ffffff;
   text-align: left;
 }
-.form .otp {
+.form .name {
   position: relative;
   margin: 0 50px;
   color:#ffffff;
   text-align: left;
+  width: auto;
 }
 ::-webkit-input-placeholder {
   color: #f0f0f0;
@@ -142,7 +143,7 @@
     bottom:0;
 }
 
- #otp{
+ #name{
   border: none;
   margin-top: 10px;
     border-bottom-left-radius: 0px;
@@ -155,37 +156,38 @@
   } 
 
     </style>
-    <script type="text/javascript">
-      var mobilenumber ;
-      // = document.getElementById('mobile');
-      var username;
+    <script>
+      var mobilenumber = document.forms["form"]["mobile"].value;
+      var username = document.forms["form"]["name"].value;
       //  = document.getElementById('name');
       function checknum(mobile,name){
       if(mobile.length!=10 ){
         console.log("Wrong Number");
         return (alert("Please enter 10 digits"));
+        return false;
       }
       else if(!name.isNaN){
         console.log("Is A Number");
         return (alert("Name Should Not be a Number!")) ;
       }
-     return true;
+     return false;
         
       };
 
-      function check(mobile,name){
-        mobilenumber = mobile;
-        username = name;
-        let x = checknum(mobilenumber, username);
-        if(x == true){
-          console.log("true");
-          location.replace("form.html");
-        }
-        else{
-          console.log("false");
-          location.replace("index.html");
-        }
-      }
+      // function check(mobile,name){
+      //   mobilenumber = mobile;
+      //   username = name;
+      //   let x = checknum(mobilenumber, username);
+      //   if(x == true){
+      //     console.log("true");
+      //     // location.replace("form.html");
+      //     return x;
+      //   }
+      //   else{
+      //     console.log("false");
+      //     location.replace("index.html");
+      //   }
+      // }
 
   </script>
 
@@ -194,7 +196,7 @@
     <div class="login">
     <h1>Login - form</h1>
 
-    <form class="form" method="" action="">
+    <form name="form" class="form" method="post" action="form.html" onsubmit="checknum() ">
 
         <p class="mobile">
         Mobile Number : 
@@ -207,10 +209,29 @@
         </p>
         <!-- <input type="button" id="otp" name="otp" value="Send OTP" "></p>
         <p class="submit"> -->
-        <input type="submit" name="sent" value="Login" onclick="check(document.getElementById('mobile').value, document.getElementById('name').value) " ></p>
+        <input type="submit" name="sent" value="Login" ></p>
       </form>
     </div>
-    
+
+      <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC62kR5nxhbtVR4nikc7gMhFawU5hvJIDs",
+    authDomain: "qr-feedback-form.firebaseapp.com",
+    projectId: "qr-feedback-form",
+    storageBucket: "qr-feedback-form.appspot.com",
+    messagingSenderId: "570897041700",
+    appId: "1:570897041700:web:bff1b6b7b7353d3c274bb1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
     
   
 </body>
