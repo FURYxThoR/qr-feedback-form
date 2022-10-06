@@ -157,22 +157,24 @@
 
     </style>
     <script>
-      var mobilenumber = document.forms["form"]["mobile"].value;
-      var username = document.forms["form"]["name"].value;
+      
       //  = document.getElementById('name');
-      function checknum(mobile,name){
-      if(mobile.length!=10 ){
+      function checknum(){
+        let mobilenumber = document.forms["form"]["mobile"].value;
+      let username = document.forms["form"]["name"].value;
+      if(mobilenumber.length!=10 ){
         console.log("Wrong Number");
-        return (alert("Please enter 10 digits"));
+        alert("Please enter 10 digits");
         return false;
       }
-      else if(!name.isNaN){
+      else if(/\d/.test(username)){
         console.log("Is A Number");
-        return (alert("Name Should Not be a Number!")) ;
+        alert("Name Should Not be a Number! "+username) ;
+        return false;
       }
-     return false;
+     return true;
         
-      };
+      }
 
       // function check(mobile,name){
       //   mobilenumber = mobile;
@@ -196,16 +198,16 @@
     <div class="login">
     <h1>Login - form</h1>
 
-    <form name="form" class="form" method="post" action="form.html" onsubmit="checknum() ">
+    <form name="form" class="form" method="post" action="form.html" onsubmit=" return checknum() ">
 
         <p class="mobile">
         Mobile Number : 
-          <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile number"  required/>
+          <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile number"/>
         </p>
   
         <p class="name">
          Name : 
-          <input type="text" name="name" id="name" placeholder="Enter your name..." minlength="2" isNaN required/>
+          <input type="text" name="name" id="name" placeholder="Enter your name..." />
         </p>
         <!-- <input type="button" id="otp" name="otp" value="Send OTP" "></p>
         <p class="submit"> -->
