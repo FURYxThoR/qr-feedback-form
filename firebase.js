@@ -72,3 +72,14 @@ confirmationResult.confirm(code).then((result) => {
 var credential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId, code);
 
 firebase.auth().signInWithCredential(credential);
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC62kR5nxhbtVR4nikc7gMhFawU5hvJIDs",
+  authDomain: "qr-feedback-form.firebaseapp.com",
+  projectId: "qr-feedback-form",
+  storageBucket: "qr-feedback-form.appspot.com",
+  messagingSenderId: "570897041700",
+  appId: "1:570897041700:web:bff1b6b7b7353d3c274bb1"
+};
