@@ -31,7 +31,7 @@
 	#number, #verificationcode {
 		padding: 10px;
 		font-size: 20px;
-		margin-bottom: 5px;
+		margin-bottom: 25px;
 		outline: none;
 		font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
 
@@ -83,37 +83,38 @@
 	}
 
 	#verify{
-		margin-top: 5px;
-		width: 270px;
-		left: 0;
 		text-align: center;
+		margin-bottom: 0%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
 		font-size: 14px;
 		font-family: "Open Sans", sans-serif;
 		font-weight: bold;
-		padding: 10px;
-		width: 90%;
-		color: rgb(255, 255, 255);
+		color: white;
 		background: rgba(61, 22, 255, 0.313);
 		backdrop-filter: blur(10px);
 		border-top: 1px solid rgba(255,255,255,0.25);
 		border-left: 1px solid rgba(255,255,255,0.25);
 		box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
 		border: none;
-		border-bottom-left-radius: 15px;
-		border-bottom-right-radius: 15px;
-		position: fixed;
-		bottom:0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		padding: 10px 10px;
 	}
 	.p-conf, .n-conf {
-		position: absolute;
-		margin-top: 30px;
-		width: 100%;
+		position: relative;
+		font-size: 18px;
+		width: 99%;
 		height: auto;
+		margin-bottom: 20px;
+		align-items: center;
+		text-align: center;
 		border: 2px solid green;
-		border-radius: 4px;
+		border-radius: 22px;
 		background-color: rgba(0, 249, 12, 0.5);
 		display: none;
-		align-items: center;
 	}
 	.n-conf {
 		width: 50%;

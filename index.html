@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
 	<link rel="stylesheet" href="index.css">
-<title>Sign-Up | QR Feedback</title>
+<title>Login | QR Feedback</title>
 	<div class="container">
 		<h1> Feedback Form </h1>
 		
@@ -19,8 +19,12 @@
 		<div id="verifier" style = "display: none">
 			<input type="text" id="verificationcode" placeholder="OTP Code">
 			<input type="submit" id="verify" value="Login" onClick="codeverify()">
-			<div class="p-conf">Number Verified Successfully !</div>
-			<div class="n-conf">Wrong OTP, Try again !!</div>
+			<div class="p-conf">
+				Number Verified Successfully !
+			</div>
+			<div class="n-conf">
+				Wrong OTP, Try again !!
+			</div>
 		</div>
 		
 	</div>
@@ -61,10 +65,12 @@ function codeverify(){
 	coderesult.confirm(code).then(function(){
 		document.getElementsByClassName('p-conf')[0].style.display = 'block';
 		document.getElementsByClassName('n-conf')[0].style.display = 'none';
+		setTimeout(location.replace("form.html"), 7000);
 	}).catch(function(){
 		document.getElementsByClassName('p-conf')[0].style.display = 'none';
 		document.getElementsByClassName('n-conf')[0].style.display = 'block';
 	})
+	
 	
 }
 </script>
