@@ -1,39 +1,45 @@
 body{
     justify-content: center;
     color: white;
-    /* background-color: slategrey;     */
+    background-color: lightslategray;    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-size: 100% 100%;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+
 
     
 }
 #header{
-    color: #f0f0f0;
+    color: white;
+    text-shadow: 2px 2px 2px darkblue;
     font-size:30px;
     background-color: rgba(0, 0, 0, 0.215);
     backdrop-filter: blur(10px);
-    text-align: center;
     position: fixed;
     height: auto;
-    width: 100%;
+    width: 90%;
+    padding-left: 15px;
     border: 3px solid #192448;
     border-radius: 20px;
-    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 3px;
 }
-#footer{
-   
-    font-size:10px;
-    align-items: right;
+
+#form{
+    color: beige;
+    text-align:  justify;
+    margin-left: 15px;
 }
 
 #survey-form-suggestions{
     height: 40px;
-    width: 80%;
+    width: 90%;
     display: flex;
-    background-color: #192448;
+    background-color: rgba(0, 0, 139, 0.32);
     padding-bottom:0px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -69,6 +75,7 @@ body{
     padding:8px 20px 8px 20px;
     color: #ffffff;
     backdrop-filter: blur(10px);
+
 }
 .btn{
     margin-bottom: 28vw;
@@ -78,19 +85,24 @@ body{
     padding:8px 20px 8px 20px;
     color: #ffffff;
     backdrop-filter: blur(10px);
+    text-shadow: 3px 3px 3px darkblue;
+    margin-bottom: 200px;
+
+
 }
 
 .footer-bottom{
     width: 100vw;
     text-align: center;
     margin-bottom: 0%;
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
+    color: whitesmoke;
 }
-.footer-bottom p{
-    text-align: center;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }

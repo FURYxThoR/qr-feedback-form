@@ -1,0 +1,145 @@
+	body {
+        font-style: "CenturyGothic";
+		font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+		background: #243b55;
+		background-size: cover;
+		background-repeat: no-repeat;
+		}
+
+	#txt{
+        letter-spacing: 1px;
+		color: white;
+		font-size: 18px;
+		padding: 0.25em;
+		display: flex;
+        /* font-weight: bold; */
+		align-items: flex-start;
+	}
+	.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 385px;
+    padding: 40px;
+    padding-top: 0px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+	}
+	#number, #verificationcode {
+		padding: 10px;
+		font-size: 20px;
+		margin-bottom: 5px;
+		outline: none;
+		font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+
+		font-size: 14px;
+		font-weight: 400;
+		padding: 10px 10px;
+		position: relative;
+		width: 285px;
+		height: 24px;
+		border-radius: 22px;
+		border: none;
+		background: rgba(255, 255, 255, 0);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255,255,255,0.25);
+		border-left: 1px solid rgba(255,255,255,0.25);
+		box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
+		color: white;
+		text-align: left;
+	}
+	#recaptcha-container {
+		margin-top: 15px;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.send {
+		border: none;
+		margin-top: 33px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		width: 44%;
+		height: 40px;
+		border-radius: 3px;
+		background: none;
+		font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+
+		font-size: 18px;
+		font-weight: bold;
+		border-radius: 123px;
+		background: rgba(255,255,255,0);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255,255,255,0.25);
+		border-left: 1px solid rgba(255,255,255,0.25);
+		box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
+		color: white;	
+		
+	}
+
+	#verify{
+		margin-top: 5px;
+		width: 270px;
+		left: 0;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Open Sans", sans-serif;
+		font-weight: bold;
+		padding: 10px;
+		width: 90%;
+		color: rgb(255, 255, 255);
+		background: rgba(61, 22, 255, 0.313);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255,255,255,0.25);
+		border-left: 1px solid rgba(255,255,255,0.25);
+		box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
+		border: none;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		position: fixed;
+		bottom:0;
+	}
+	.p-conf, .n-conf {
+		position: absolute;
+		margin-top: 30px;
+		width: 100%;
+		height: auto;
+		border: 2px solid green;
+		border-radius: 4px;
+		background-color: rgba(0, 249, 12, 0.5);
+		display: none;
+		align-items: center;
+	}
+	.n-conf {
+		width: 50%;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		border-color: red;
+		background-color: rgba(255, 0, 4, 0.5);
+	}
+
+
+
+	h1 {
+    line-height: 55px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    /* background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);*/
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    /* border-left: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
+    margin-top: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */ 
+    }
+
