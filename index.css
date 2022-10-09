@@ -144,3 +144,16 @@
     border-top-right-radius: 8px; */ 
     }
 
+#admn{
+	position: absolute;
+	opacity: 0.5;
+	bottom: 1%;
+	right: 0;
+	align-items: center;
+	font-size: 14px;
+	margin-right: 25px;
+	border: 1px dotted darkslateblue;
+	border-radius: 10px;
+
+	/* transform: translate(50%, 50%); */
+}
