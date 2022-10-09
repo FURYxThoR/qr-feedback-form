@@ -1,56 +1,109 @@
-h1{
+body{
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+    background-color: #fff;
+
+}
+h2{
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    /* background-image: url(/wp1813472.jpeg); */
-    /* background-color: azure; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-iframe{
-    margin-left: 50px;
-    padding: 20px;
-}
-
-.dashboard{
-    margin-left: 50px;
-}
-
-#admin_panel{
-    margin-right: 10%;
-    border-right: solid;
-    border-color: rgb(234, 214, 133);
-    margin-top: -50px;
-}
-/* div{
-    padding: 20px;
-    background-color: rgb(146, 249, 249);
-} */
-.admin{
-    margin-top: -150%;
-}
-
-#welcome{
-    font-weight: 400;
-    font-style: italic;
-}
-
-#pie{
-    margin-left: 24%;
-}
-#histogram{
-    margin-top: -200px;
-    /* margin-left: 50%; */
+    font-size: 50px;
+    color: darkblue;
+    background-color: #ffffff7c;
 }
 
 img{
-    margin-right: 50px;
-    margin-left: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 10%;
+    border: 2px solid;
+    border-radius: 30px;
+    transform: translate(0%, 39%);  
+}
+p{
+    align-items: right;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 3%;
+}
+
+iframe{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-left: 0px;
+    padding: 0px;
+}
+
+
+#header{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: whitesmoke;
+    background: linear-gradient(darkblue, #ffffff);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+#admin{
+    color: black;
+    align-items:center;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+#welcome{
+    padding: 10px;
+}
+
+
+#responses{
+color: #000;
+display: flex;
+flex-wrap: nowrap;
+margin-bottom: 0;
+margin-left: 5px;
+}
+
+#num{
+    position: relative;
+    width: 90%;
+    display: flex;
+    left: 0;
+    top: 0;
+    transform: translate(49%, 0%);
+}
+#pie{
+    width: 90%;
+    display: flex;
+    left: 0;
+    top: 0;
+    transform: translate(15%, 0%);
+}
+#bar{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+}
+
+.dashboard{
+    position: relative;
+    margin-top: 69px;
+}
+.dash{
+    position: relative;
+    margin-top: 60px;
 }
