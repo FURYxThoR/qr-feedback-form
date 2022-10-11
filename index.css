@@ -117,10 +117,13 @@
 		display: none;
 	}
 	.n-conf {
-		width: 50%;
-		display: none;
+		position: relative;
+		font-size: 18px;
+		width: 99%;
+		height: auto;
+		margin-bottom: 20px;
 		align-items: center;
-		justify-content: center;
+		text-align: center;
 		border-color: red;
 		background-color: rgba(255, 0, 4, 0.5);
 	}
