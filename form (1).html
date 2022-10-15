@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+      
+    <title>Feedback Form | Citizen</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header id="header">Thanks for visiting Police station</header>
+  <br><br><br><br></br>
+  <center>
+  <h3 id="translate">Change Language:</h3>
+  <a id="hindi" href="/hindi_form.html">हिन्दी</a>
+  <a id="gujarati" href="/gujarati_form.html">ગુજરાતી</a></center>
+  <center>
+    <p id="description" class="description" class="text-center"> <br> This survey form will help us to review and to improve
+        police behaviour and common people experience. 
+    </p></center> 
+    <br>
+    <br>
+    <div>
+        <form class="form" id="form" onsubmit="return clearForm()" method="post" action="https://script.google.com/macros/s/AKfycby8JMuUTey6haEh8uT7Q5Xl3WajUVPKt2F191XBe0BAnoDpYGO9z_rkfTeJEPTJwas1/exec" id="survey-form" name="survey-form">
+                 
+                    <div class="labels" name="reach">
+                        1) How did you come to the police station? *
+                     </div>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="Through a person known to a police officer" /> Through a person known to a police officer
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="With a neighbour/ local leader" /> With a neighbour/ local leader
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="On your own" /> On your own
+                     </label>
+                     <br>
+                     <br> 
+                     <br>
+                 
+                
+                 
+                    <div class="labels" name="duration">
+                       2) How much you waited to be heard in Police Station?*
+                     </div>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="Immediately"   /> Immediately
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="5 minutes" /> 5 minutes
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="10 minutes" /> 10 minutes
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                    <input type="radio" name="duration" value="15 minutes" /> 15 minutes
+                    </label>
+                    <label class="m-b-xs">
+                    <br>
+                    <input type="radio" name="duration" value="More than 15 minutes" /> More than 15 minutes
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                 
+                    <label for="survey-form-suggestions">
+                        3) How would you describe your experience with police
+                        officers in the police station?
+                        <br><br>
+                    <textarea id="survey-form-suggestions" maxlength="300" placeholder="Please provide your suggestions" name="experience" required></textarea></label>
+                    <br>
+                    <br>
+                    <br>
+                    <center><input type="reset" class="btn" value="Reset" />         
+        <input type="submit" class="btn" value="Submit" /></center>
+                 
+        </form>
+        <footer class="footer-bottom"> <p>Home Department, Gujarat Police</p> </footer>
+      </div>
+      <script>
+        function clearForm(){
+          document.form.getElementById('form').reset();
+          return true;
+        }
+      </script>  
+</body>
+</html>
