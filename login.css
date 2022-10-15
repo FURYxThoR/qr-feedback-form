@@ -9,11 +9,25 @@ html {
     background: linear-gradient(#141e30, #243b55);
   }
   
+  #logo{
+		/* background-image: url(banner2.png); */
+		text-align: center;
+		margin-bottom: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px; 
+  }
+
   .login-box {
+
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 357px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
