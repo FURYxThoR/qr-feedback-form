@@ -89,19 +89,27 @@ body{
     border-radius:20px;
     background-color: rgba(167, 167, 167, 0.215);
     padding:8px 20px 8px 20px;
-    color: black;
+    color: whitesmoke;
     backdrop-filter: blur(10px);
     /* text-shadow: 3px 3px 3px darkblue; */
     margin-bottom: 200px;
+}
 
-
+.btn:hover{
+    background: #00177c;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #00177c,
+                0 0 25px #00177c,
+                0 0 50px #00177c,
+                0 0 100px #00177c;
 }
 
 .footer-bottom{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin-bottom: 0%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     color: whitesmoke;

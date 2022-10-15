@@ -8,6 +8,8 @@
     <meta name="HandheldFriendly" content="true">
       
     <title>Feedback Form | Citizen</title>
+    <link rel="icon" href="plogo.png" type="image/icon type">
+
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
@@ -31,15 +33,15 @@
                         1) તમે પોલીસ સ્ટેશન કેવી રીતે આવ્યા? *
                      </div>
                      <label class="m-b-xs">
-                     <input type="radio" name="reach" value="Through a person known to a police officer" /> પોલીસ અધિકારીને ઓળખતી વ્યક્તિ દ્વારા
+                     <input type="radio" name="reach" value="Through a person known to a police officer" required/> પોલીસ અધિકારીને ઓળખતી વ્યક્તિ દ્વારા
                      </label>
                      <br>
                      <label class="m-b-xs">
-                     <input type="radio" name="reach" value="With a neighbour/ local leader" /> પાડોશી / સ્થાનિક નેતા સાથે
+                     <input type="radio" name="reach" value="With a neighbour/ local leader" required/> પાડોશી / સ્થાનિક નેતા સાથે
                      </label>
                      <br>
                      <label class="m-b-xs">
-                     <input type="radio" name="reach" value="On your own" /> તમારા પોતાના પર
+                     <input type="radio" name="reach" value="On your own" required/> તમારા પોતાના પર
                      </label>
                      <br>
                      <br> 
@@ -51,30 +53,78 @@
                        2) તમે પોલીસ સ્ટેશનમાં કેટલો સમય રાહ જોઈ?*
                      </div>
                      <label class="m-b-xs">
-                     <input type="radio" name="duration" value="Immediately"   /> તરત
+                     <input type="radio" name="duration" value="Immediately" required  /> તરત
                      </label>
                      <br>
                      <label class="m-b-xs">
-                     <input type="radio" name="duration" value="5 minutes" /> 5 મિનિટ
+                     <input type="radio" name="duration" value="5 minutes" required/> 5 મિનિટ
                      </label>
                      <br>
                      <label class="m-b-xs">
-                     <input type="radio" name="duration" value="10 minutes" /> 10 મિનિટ
+                     <input type="radio" name="duration" value="10 minutes" required/> 10 મિનિટ
                      </label>
                      <br>
                      <label class="m-b-xs">
-                    <input type="radio" name="duration" value="15 minutes" /> 15 મિનિટ
+                    <input type="radio" name="duration" value="15 minutes" required/> 15 મિનિટ
                     </label>
                     <label class="m-b-xs">
                     <br>
-                    <input type="radio" name="duration" value="More than 15 minutes" /> 15 મિનિટથી વધુ
+                    <input type="radio" name="duration" value="More than 15 minutes" required/> 15 મિનિટથી વધુ
                     </label>
                     <br>
                     <br>
                     <br>
+                    <br>
+                    <div class="form-group col-md-4">
+                      <label for="inputDistrict" style="color:whitesmoke"> 3) જિલ્લો પસંદ કરો :</label>
+                      <select class="form-control" id="inputDistrict" name="district" required>
+                                <option value="SelectDistrict">--- જિલ્લો ---</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Amreli">Amreli</option>
+                                <option value="Anand">Anand</option>
+                                <option value="Banaskantha">Banaskantha</option>
+                                <option value="Bharuch">Bharuch</option>
+                                <option value="Bhavnagar">Bhavnagar</option>
+                                <option value="Dahod">Dahod</option>
+                                <option value="Gandhinagar">Gandhinagar</option>
+                                <option value="Gir Somnath">Gir Somnath</option>
+                                <option value="Jamnagar">Jamnagar</option>
+                                <option value="Junagadh">Junagadh</option>
+                                <option value="Kheda">Kheda</option>
+                                <option value="Kachchh">Kachchh</option>
+                                <option value="Mehsana">Mehsana</option>
+                                <option value="Narmada">Narmada</option>
+                                <option value="Navsari">Navsari</option>
+                                <option value="Patan">Patan</option>
+                                <option value="Porbandar">Porbandar</option>
+                                <option value="Rajkot">Rajkot</option>
+                                <option value="Sabarkantha">Sabarkantha</option>
+                                <option value="Surendranagar">Surendranagar</option>
+                                <option value="Surat">Surat</option>
+                                <option value="Tapi">Tapi</option>
+                                <option value="Vadodara">Vadodara</option>
+                                <option value="Valsad">Valsad</option>
+                              </select>
+                    </div> <br>
+                    <div class="form-group col-md-4">
+                      <label for="inputTaluka" style="color:whitesmoke">4) સ્ટેશન :</label>
+                      <select class="form-control" id="inputTaluka" required>
+                        <option value="taluka.js">-- પસંદ કરો  -- </option>
+                        <option value="Nikol">Nikol</option>
+                        <option value="Nikol">Naroda</option>
+                        <option value="Nikol">Odhav</option>
+                        <option value="Nikol">Viratnagar</option>
+                        <option value="Nikol">Narol</option>
+                        <option value="Nikol">CTM</option>
+                        <option value="Nikol">Kathwada</option>
+
+                      </select>
+                    </div>
+                  
+                    <br>
                  
                     <label for="survey-form-suggestions">
-                        3) પોલીસ સ્ટેશનમાં પોલીસ અધિકારીઓ સાથેના તમારા અનુભવનું તમે કેવી રીતે વર્ણન કરશો?
+                        5) પોલીસ સ્ટેશનમાં પોલીસ અધિકારીઓ સાથેના તમારા અનુભવનું તમે કેવી રીતે વર્ણન કરશો?
                         <br><br>
                     <textarea id="survey-form-suggestions" maxlength="300" placeholder="કૃપા કરીને તમારા સૂચનો આપો" name="experience" required></textarea></label>
                     <br>

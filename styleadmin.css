@@ -16,13 +16,14 @@ h2{
 }
 
 img{
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     margin-right: 10%;
+    margin-top: 1%;
     border: 2px solid;
     border-radius: 30px;
-    transform: translate(0%, 39%);  
+    /* transform: translate(0%, 39%);   */
 }
 p{
     align-items: right;
@@ -35,8 +36,6 @@ p{
 
 iframe{
     display: flex;
-    justify-content: space-around;
-    
     margin-left: 0px;
     padding: 0px;
 }
@@ -92,7 +91,7 @@ margin-left: 5px;
     top: 0;
     transform: translate(15%, 0%);
 }
-#bar{
+#bar, #line, #tabl{
     width: 90%;
     height: 90%;
     align-items: center;

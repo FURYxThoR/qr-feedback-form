@@ -1,8 +1,7 @@
-var Ahmedabad = ["Daskroi", "Sanand", "Bavla", "Dholka", "Viramgam", "Maqndal", "Detroj-Rampura", "Dhandhuka", "Ranpur", "Barwala"
-];
+var Ahmedabad = ["Daskroi", "Sanand", "Bavla", "Dholka", "Viramgam", "Maqndal", "Detroj-Rampura", "Dhandhuka", "Ranpur", "Barwala"];
 var Amreli = ["Amreli", "Kunkavav Moti", "Babra", "Lathi", "Lilia", "Dhari", "Khambha", "Jafarabad", "Bagasara", "Rajula", "Savar Kundla", "Vadia"];
 
-var Anand = ["Anand", "Aanklav", "Borshad", "Khambhat", "Petlad", "Shojtra", "Tarapur", "Umretha"] 
+var Anand = ["Anand", "Aankslav", "Borshad", "Khambhat", "Petlad", "Shojtra", "Tarapur", "Umretha"] 
 
 var Banaskantha =["Vadgam", "Danta", "Amirgadh", "Diyodhar", "Dhanera", "Tharad", "Deesa", "Vav", "Bhabhar", "Dantiwada", "Palanpur", "Kankrej"]
 
@@ -48,7 +47,7 @@ var Vadodara  =[ "Savli", "Padra", "Vadodara", "Waghodia", "Karjan", "Sinor", "D
 var Valsad  =[ "Valsad", "Pardi", "Dharampur", "Umergam", "Kaprada", "Vapi"] 
 
 
-$("#inputDistrict").change(function(){
+// $("#inputDistrict").change(function(){
     
   var DistrictSelected = $(this).val();
   console.log("selected"+DistrictSelected)
@@ -140,4 +139,6 @@ $("#inputDistrict").change(function(){
   }
   $("#inputTaluka").html(htmlString);
 
-});
+;
+
+
