@@ -9,15 +9,21 @@
 <title>Login | QR Feedback</title>
 </head>
 <body>
+	<!-- <img  id="img" src="plogo.png"> -->
 	<div class="container">
-		<img id="logo" src="banner2.png" height="28%"  width="28%">
-		<h1> Feedback Form </h1>
+		<div id="banner">
+			<h1> Feedback Form </h1>
+			<img id="logo" src="banner.png" height="28%"  width="28%">
+		</div>
 		
 		<div id="sender">
-			<p id="txt">Enter a 10-digit Mobile Number  :</p>
+			<br>
+			<p id="txt">Enter 10-digit Mobile Number :</p>
 			<input type="text" id="number" value="+91 " placeholder="Enter your 10-digit phone number" >
 			<div id="recaptcha-container"></div>
-			<input type="button" class="send" value="SEND OTP" onClick="phoneAuth()">
+			<center>
+				<input type="button" class="send" value="SEND OTP" onClick="phoneAuth()">
+			</center>
 			<a href="login.html" id="admn">Are you an admin?</a>
 		</div>
 		<div id="verifier" style = "display: none">
