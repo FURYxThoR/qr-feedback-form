@@ -1,7 +1,7 @@
 body{
     justify-content: center;
-    color: white;
-    background-color: lightslategray;    
+    color: whitesmoke;
+    background-color: beige;    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-size: 100% 100%;
     background-size: cover;
@@ -20,7 +20,7 @@ body{
 }
 
 .form{
-    color: beige;
+    color: whitesmoke;
     text-align:  justify;
     margin-left: 5px;
 }
@@ -29,7 +29,7 @@ body{
     height: 40px;
     width: 90%;
     display: flex;
-    background-color: rgba(0, 0, 139, 0.32);
+    /* background-color: rgba(0, 0, 139, 0.32); */
     padding-bottom:0px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -69,13 +69,13 @@ body{
 }
 .btn{
     margin-bottom: 28vw;
-    border: 2px solid #192448;
+    /* border: 2px solid #192448; */
     border-radius:20px;
     background-color: rgba(167, 167, 167, 0.215);
     padding:8px 20px 8px 20px;
-    color: #ffffff;
+    color: black;
     backdrop-filter: blur(10px);
-    text-shadow: 3px 3px 3px darkblue;
+    /* text-shadow: 3px 3px 3px darkblue; */
     margin-bottom: 200px;
 
 
