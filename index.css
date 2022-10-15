@@ -41,6 +41,16 @@
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
 	}
+
+	.custom-select{
+		position: relative;
+		margin-bottom: 20px;
+		left: 0;
+		padding: 10px;
+		margin-left: 25%;
+		border-radius: 24px;
+	}
+
 	#number, #verificationcode {
 		padding: 10px;
 		font-size: 20px;
