@@ -1,6 +1,6 @@
 body{
     font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
-    background-color: #fff;
+    background-color: whitesmoke;
     width: fit-content;
 
 }
@@ -54,6 +54,10 @@ iframe{
     
 }
 
+h3{
+    margin: 20px;
+    padding: 20px;
+}
 #admin{
     color: black;
     align-items:center;
