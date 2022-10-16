@@ -1,6 +1,6 @@
 body{
     font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
-    background-color: whitesmoke;
+    background-color: bisque;
     width: fit-content;
 
 }
@@ -16,14 +16,15 @@ h2{
 }
 
 img{
-    position: absolute;
-    right: 0;
+    position: fixed !important;
+    left: 0;
     top: 0;
-    margin-right: 10%;
-    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
     border: 2px solid;
-    border-radius: 30px;
-    /* transform: translate(0%, 39%);   */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 p{
     align-items: right;
@@ -41,7 +42,7 @@ iframe{
 }
 
 
-#header{
+/* #header{
     position: fixed;
     text-align: center;
     left: 0;
@@ -52,7 +53,7 @@ iframe{
     width: 100%;
     margin: 0 auto;
     
-}
+} */
 
 h3{
     margin: 20px;
@@ -74,33 +75,48 @@ h3{
 
 #responses{
 color: #000;
+font-size: 32px;
 display: flex;
 flex-wrap: nowrap;
 margin-bottom: 0;
-margin-left: 5px;
+margin-left: 5%;
+width: auto;
+}
+
+#bar, #line{
+    position: relative;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#tabl{
+    position: relative;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18%;
+}
+#table{
+    margin-left: 35%;
+    text-decoration: none;
+    padding: 5px;
+    border-style: solid;
 }
 
 #num{
+    text-align: center;
+    margin-left: 45%;
+}
+
+#pie {
     position: relative;
-    width: 90%;
     display: flex;
-    left: 0;
-    top: 0;
-    transform: translate(49%, 0%);
-}
-#pie{
-    width: 90%;
-    display: flex;
-    left: 0;
-    top: 0;
-    transform: translate(15%, 0%);
-}
-#bar, #line, #tabl{
-    width: 90%;
-    height: 90%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25vw;
+    margin-left: 15%;
+    /* transform: translate(5%, 0%) */
 }
 
 .dashboard{
